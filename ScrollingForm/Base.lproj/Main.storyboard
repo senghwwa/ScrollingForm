@@ -22,8 +22,37 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="G9z-YW-zSI">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="356" width="375" height="87"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CkS-z0-d0Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa7-ES-n9p">
+                                                        <rect key="frame" x="8" y="8" width="224" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zZ2-p7-MMq">
+                                                        <rect key="frame" x="8" y="37" width="224" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="zZ2-p7-MMq" firstAttribute="top" secondItem="Fa7-ES-n9p" secondAttribute="bottom" constant="8" id="6Va-gc-WDU"/>
+                                                    <constraint firstItem="Fa7-ES-n9p" firstAttribute="top" secondItem="CkS-z0-d0Z" secondAttribute="top" constant="8" id="Ffx-Uy-Fxy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zZ2-p7-MMq" secondAttribute="trailing" constant="8" id="SJu-FQ-kQh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Fa7-ES-n9p" secondAttribute="trailing" constant="8" id="d4c-IU-9nl"/>
+                                                    <constraint firstItem="Fa7-ES-n9p" firstAttribute="leading" secondItem="CkS-z0-d0Z" secondAttribute="leading" constant="8" id="hiF-Ea-GY3"/>
+                                                    <constraint firstItem="zZ2-p7-MMq" firstAttribute="leading" secondItem="CkS-z0-d0Z" secondAttribute="leading" constant="8" id="iKv-G6-VWG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zZ2-p7-MMq" secondAttribute="bottom" constant="20" id="nCX-dO-pnh"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
                             </scrollView>
@@ -32,6 +61,7 @@
                         <constraints>
                             <constraint firstItem="MRD-n2-lsT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0BG-0k-jVk"/>
                             <constraint firstItem="MRD-n2-lsT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EpB-LE-6Fa"/>
+                            <constraint firstItem="CkS-z0-d0Z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="mFK-OG-bX0"/>
                             <constraint firstItem="MRD-n2-lsT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rRB-EE-ku4"/>
                             <constraint firstItem="MRD-n2-lsT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tg2-Uv-ciX"/>
                         </constraints>
